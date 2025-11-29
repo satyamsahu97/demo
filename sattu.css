@@ -1,0 +1,228 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: white;
+    color: rgb(241, 236, 236);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100vw;
+    padding: 20px;
+    height: 90px;
+
+
+
+
+}
+nav ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    list-style: none;
+    font-size: 18px;
+    width: 30%;
+
+    
+}
+#searchbar
+{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+
+}
+#searchbar input
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    
+
+}
+#searchbar button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(14, 10, 235);
+    color: white;
+    border: none;
+}
+nav h1
+{
+    color:cornflowerblue ;
+}
+nav ul li:hover
+{
+    color:  cornflowerblue;
+}
+#main
+{
+    height: calc(120vh - 90px) ;
+    background-image: url(https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/190421/mahindra-scorpio-right-front-three-quarter0.jpeg?isig=0&q=80);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    
+}
+#first
+{
+    height: 80%;
+    width: 25%;
+    border: 2px rgb(42, 10, 228) solid;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+
+}
+span{
+
+    color: blue;
+}
+#content
+{
+    
+    padding: 8px;
+    
+}
+#content h2{
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+
+}
+#content p{
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+
+}
+#content button
+{
+border: none;
+background-color: blue;
+color: white;
+padding: 10px;
+border-radius: 20px;
+position: relative;
+left: 50px;
+top: 10px;
+
+}
+
+#second
+{
+    height:80%;
+    width: 25%;
+    /* border: 2px rgb(42, 10, 228) solid; */
+    position: relative;
+    top: 100px;
+    right: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+#satyam
+{
+    display: flex;
+    column-gap: 10px;
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+
+}
+#satyam1
+{
+    display: flex;
+    column-gap: 10px;
+    position: relative;
+    top: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}#satyam2
+{
+    display: flex;
+    column-gap: 10px;
+    position: relative;
+    top: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+#satyam3
+{
+    display: flex;
+    column-gap: 10px;
+    position: relative;
+    top: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.card
+{
+    height: 100px;
+    width: 128px;
+    border-radius: 20px;
+}
+.card img
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+@media screen and (max-width:700px)
+ {
+    nav
+    {
+        flex-direction: column;
+        row-gap: 10px;
+
+    }
+    #searchbar
+    {
+        width: 70%;
+
+        row-gap: 10px;
+    }
+    
+}
+@media screen and (max-width:568px)
+{
+    nav ul  {
+        flex-direction: column;
+        row-gap: 10px;
+
+    }
+    #searchbar
+    {
+        flex-direction: column;
+    }
+    #searchbar button
+    {
+        width: 90%;
+    }
+    #first
+    {
+        border: none;
+    }
+}
